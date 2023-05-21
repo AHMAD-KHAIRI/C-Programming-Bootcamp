@@ -1,8 +1,57 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Example of arithmetic operators:
-// - / * % ++ -- <= >= == != >> && + || *= < %= ~ << /= ^ | += !
+// 35. Increment and Decrement Operators
+// Unary operators: ++ --
+// Post - Increment / Decrement: B = A++ / A--
+// Pre - Increment / Decrement: B = ++A / --A
+
+int main()
+{
+    printf("\nUsing float:\n");
+    float c, d;
+
+    c = 3.14;
+    d = c++;
+
+    printf("After Post-Increment:\n");
+    printf("c: %.2f\n", c);
+    printf("d: %.2f\n", d);
+
+    c = 3.14;
+    d = ++c;
+
+    printf("After Pre-Increment:\n");
+    printf("c: %.2f\n", c);
+    printf("d: %.2f\n", d);
+    
+    printf("\nUsing int:\n");
+    int a, b;
+
+    a = 0;
+    // b = a++;
+    b = a++ * 2 + 1;
+
+    printf("After Post-Increment:\n");
+    printf("a: %d\n", a);
+    printf("b: %d\n", b);
+
+    a = 0;
+    // b = ++a;
+    b = ++a * 2 + 1;
+
+    printf("After Pre-Increment:\n");
+    printf("a: %d\n", a);
+    printf("b: %d\n", b);
+
+    printf("\n\n=== ByteGarage ===\n\n");
+    return EXIT_SUCCESS;
+}
+
+/*
+// 34. Arithmetic operators:
+// Examples: - / * % ++ -- <= >= == != >> && + || *= < %= ~ << /= ^ | += !
+// Binary operators: + - * / %
 
 int main()
 {
@@ -61,3 +110,4 @@ int main()
     printf("\n\n=== ByteGarage ===\n\n");
     return EXIT_SUCCESS;
 }
+*/
