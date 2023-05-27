@@ -1,6 +1,60 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// 36. Relational Operators
+// A [relation] B
+// - Evaluated to 1 if true
+// - Evaluated to 0 if false
+
+int main()
+{
+    // using char
+    char a = 'a';
+    char b = 'z';
+
+    printf("Enter operand A (char): ");
+    scanf("%c\n", &a);
+
+    printf("Enter operand B (char): ");
+    scanf(" %c", &b);
+    printf("\n");
+
+    printf("A = %c\n", a);
+    printf("B = %c\n", b);
+    printf("\n");
+
+    // test out all relational operators
+    printf("A == B --> %d\n", a == b);
+    printf("A != B --> %d\n", a != b);
+    printf("A > B --> %d\n", a > b);
+    printf("A < B --> %d\n", a < b);
+    printf("A >= B --> %d\n", a >= b);
+    printf("A <= B --> %d\n", a <= b);
+    
+    
+    // using int
+    // int a, b;
+
+    // printf("Enter operand A (int): ");
+    // scanf("%d", &a);
+
+    // printf("Enter operand B (int): ");
+    // scanf("%d", &b);
+    // printf("\n");
+
+    // // test out all relational operators
+    // printf("A == B --> %d\n", a == b);
+    // printf("A != B --> %d\n", a != b);
+    // printf("A > B --> %d\n", a > b);
+    // printf("A < B --> %d\n", a < b);
+    // printf("A >= B --> %d\n", a >= b);
+    // printf("A <= B --> %d\n", a <= b);
+
+    printf("\n\n=== AK_Codes ===\n\n");
+    return EXIT_SUCCESS;
+}
+
+/*
 // 35. Increment and Decrement Operators
 // Unary operators: ++ --
 // Post - Increment / Decrement: B = A++ / A--
@@ -48,7 +102,7 @@ int main()
     return EXIT_SUCCESS;
 }
 
-/*
+
 // 34. Arithmetic operators:
 // Examples: - / * % ++ -- <= >= == != >> && + || *= < %= ~ << /= ^ | += !
 // Binary operators: + - * / %
