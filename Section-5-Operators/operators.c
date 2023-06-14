@@ -1,6 +1,44 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// 37. Logical Operators
+// Examples: && (AND), || (OR), ! (NOT)
+// Truth table:
+// x    y   x AND y     x OR y      NOT x
+// 0    0      0           0         1
+// 1    0      0           1         0
+// 0    1      0           1         1
+// 1    1      1           1         0
+
+// we need this header file if we want to define variables of type bool and to use true and false markers
+#include <stdbool.h>
+
+int main()
+{
+    printf("Truth Table\n");
+    printf("------------------------------\n");
+    printf("| x | y | x AND y | x OR y | NOT x |\n");
+    printf("------------------------------\n");
+
+    bool x, y;
+    x = 0;
+    y = 0;
+    printf("| %d | %d |%5d    |%5d   |%4d   |\n", x, y, x && y, x || y, !x);
+    x = 1;
+    y = 0;
+    printf("| %d | %d |%5d    |%5d   |%4d   |\n", x, y, x && y, x || y, !x);
+    x = 0;
+    y = 1;
+    printf("| %d | %d |%5d    |%5d   |%4d   |\n", x, y, x && y, x || y, !x);
+    x = 1;
+    y = 1;
+    printf("| %d | %d |%5d    |%5d   |%4d   |\n", x, y, x && y, x || y, !x);
+
+    printf("\n\n=== AK_Codes ===\n\n");
+    return EXIT_SUCCESS;
+}
+
+/*
 // 36. Relational Operators
 // A [relation] B
 // - Evaluated to 1 if true
@@ -54,7 +92,7 @@ int main()
     return EXIT_SUCCESS;
 }
 
-/*
+
 // 35. Increment and Decrement Operators
 // Unary operators: ++ --
 // Post - Increment / Decrement: B = A++ / A--
